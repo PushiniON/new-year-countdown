@@ -1,10 +1,8 @@
 import { init, resizeReset } from './fireworks.js';
 
 var curentYear = new Date().getFullYear();
-// var countDownDate = new Date(curentYear.toString(), 11, 31);
-// countDownDate.setHours(23, 59, 59);
-var countDownDate = new Date(curentYear.toString(), 9, 29);
-countDownDate.setHours(23, 52, 59);
+var countDownDate = new Date(curentYear.toString(), 11, 31);
+countDownDate.setHours(23, 59, 59);
 
 var timer = setInterval(counT, 1000);
 
