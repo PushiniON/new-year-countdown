@@ -1,0 +1,115 @@
+@font-face {
+	font-family: newYear;
+	src: url(../fonts/ChristmasTimePersonalUse.ttf);
+}
+
+:root {
+	--max-w: 1400px;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+body.body {
+	background-image: url(../img/bg_01.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	max-width: var(--max-w);
+	align-items: center;
+	background-color: #ffd54f;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+body.sfondo {
+	background-image: url(../img/bg_02.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	max-width: var(--max-w);
+	align-items: center;
+	background-color: #ffd54f;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+#canvas {
+	position: fixed;
+	z-index: -100;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.contain {
+	height: 100%;
+	display: flex;
+	color: white;
+	text-align: center;
+	padding: 0px 10px 0 10px;
+	text-shadow: #000 0px 0px 5px, #000 0px 0px 5px, #000 0px 0px 10px, #000 0px 0px 10px, #000 0px 0px 10px, #000 0px 0px 10px;
+	-webkit-font-smoothing: antialiased;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	/* font-size: 54px; */
+	font-size: calc(20px + (54 - 20) * ((100vw - 320px) / (1400 - 320)));
+	font-weight: bold;
+	letter-spacing: .125em;
+	text-transform: uppercase;
+	/* margin-bottom: 60px; */
+	margin-bottom: calc(20px + (60 - 20) * ((100vw - 320px) / (1400 - 320)));
+}
+
+.title__new {
+	font-family: newYear;
+	letter-spacing: .47em;
+	word-spacing: .625em;
+	text-transform: none;
+	margin-bottom: 0;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
+li {
+	text-align: center;
+}
+
+.space {
+	align-self: flex-start;
+}
+
+.number {
+	display: block;
+	/* font-size: 85px; */
+	font-size: calc(30px + (85 - 30) * ((100vw - 320px) / (1400 - 320)));
+}
+
+.text {
+	font-size: calc(13px + (37 - 13) * ((100vw - 320px) / (1400 - 320)));
+	list-style-type: none;
+	padding: .7em;
+	text-transform: uppercase;
+}
