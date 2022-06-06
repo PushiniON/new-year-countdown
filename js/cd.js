@@ -1,7 +1,7 @@
 window.onload = init;
 function init() {
 	var curentYear = new Date().getFullYear();
-	var endYear = new SetDate(curentYear, 5, 31, 23, 59, 59);
+	var endYear = new SetDate(curentYear, 11, 31, 23, 59, 59);
 	countTimer(endYear);
 }
 
