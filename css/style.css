@@ -102,7 +102,7 @@ li {
 	text-transform: uppercase;
 }
 
-@media (max-width: 576px) {
+/*@media (max-width: 576px) {
 	body.body {
 		background-image: url(../img/bg_01-500.jpg);
 	}
@@ -110,7 +110,7 @@ li {
 	body.sfondo {
 		background-image: url(../img/bg_02-576.jpg);
 	}
-}
+}*/
 
 @media (min-width: 576px) {
 	body.body {
